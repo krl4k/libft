@@ -85,14 +85,8 @@ static char		**splitting(char const *s, char **split, char c, int cnt_wrd)
 char			**ft_split(char const *s, char c)
 {
 	char	**split;
-	size_t	i;
-	size_t	j;
-	size_t	len;
 	size_t	cnt_wrd;
 
-	len = 0;
-	i = 0;
-	j = 0;
 	if (!s)
 		return (NULL);
 	cnt_wrd = ft_cntwrd(s, c);
