@@ -11,9 +11,11 @@
 /* ************************************************************************** */
 
 /*
-** the first character that does not match has a lower value in str1 than in str2
+** the first character that does not match
+** has a lower value in str1 than in str2
 ** the contents of both strings are equal
-** the first character that does not match has a greater value in str1 than in str2
+** the first character that does not match has
+** a greater value in str1 than in str2
 */
 
 #include "libft.h"
