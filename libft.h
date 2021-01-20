@@ -20,13 +20,14 @@
 # include <fcntl.h>
 # include <stddef.h>
 # define BUFFER_SIZE 100000
+
 typedef struct	s_list
 {
 	void			*content;
 	struct s_list	*next;
 }				t_list;
 
-int             get_next_line(int fd, char **line);
+int				get_next_line(int fd, char **line);
 void			*ft_memset(void *b, int c, size_t len);
 void			ft_bzero(void *s, size_t n);
 void			*ft_memcpy(void *dst, const void *src, size_t n);
@@ -71,7 +72,7 @@ void			ft_lstdelone(t_list *lst, void (*del)(void *));
 void			ft_lstclear(t_list **lst, void (*del)(void *));
 void			ft_lstfree_cont(void *content);
 void			ft_lstiter(t_list *lst, void (*f)(void *));
-void            ft_lstfree_cont(void *data);
+void			ft_lstfree_cont(void *data);
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 				void (*del)(void *));
 char			*ft_strcpy(char *dst, const char *src);
